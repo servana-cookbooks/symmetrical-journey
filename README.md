@@ -11,6 +11,7 @@ Install [vagrant](https://www.vagrantup.com/downloads.html)
 ## Begin
     clone this repo git@github.com:askoudros/symmetrical-journey.git
     execute ./vagrant_init
+    once complete visit in browser [http://localhost:8484](http://localhost:8484)
 
 The script will take about 3-4 minutes to create all three virtual machines. Once the provision is complete it will query localhost:8484 to test the reverse proxy setup. The Vagrantfile has more details on port forwarding.
 
