@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "description": "Setup a Golang Application",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "goapp": {
+      "path": "/opt/app/goapp",
+      "workdir": "/opt/app/goapp/current/src",
+      "shareddir": "/opt/app/goapp/shared",
+      "user": "goapp",
+      "group": "goapp",
+      "revision": "HEAD",
+      "repo": "https://github.com/askoudros/goapp"
+    }
+  },
+  "override_attributes": {},
+  "chef_type": "role",
+  "run_list": [
+    "recipe[golang::default]","recipe[goapp::default]"
+  ],
+  "env_run_lists": {
+    "local": []
+  }
+}
+

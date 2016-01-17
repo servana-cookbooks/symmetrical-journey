@@ -1,0 +1,4 @@
+vagrant destroy app01
+vagrant destroy app02
+vagrant destroy web01
+

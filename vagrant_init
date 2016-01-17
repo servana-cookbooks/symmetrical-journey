@@ -1,0 +1,11 @@
+#vagrant up app01
+#vagrant up app02
+#vagrant up web01
+
+
+for i in {1..4}
+do
+echo -e "checking on localhost:8484 \n"
+curl -XGET http://localhost:8484
+echo -e "\n"
+done
