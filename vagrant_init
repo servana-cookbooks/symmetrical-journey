@@ -1,6 +1,6 @@
-#vagrant up app01
-#vagrant up app02
-#vagrant up web01
+vagrant up app01
+vagrant up app02
+vagrant up web01
 
 
 for i in {1..4}
