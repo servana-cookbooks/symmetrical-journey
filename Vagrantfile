@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 VAGRANTFILE_API_VERSION = "2"
-Vagrant.require_version ">= 1.3.5"
+Vagrant.require_version ">= 1.7.4"
 domain = "vagrant"
 web_ports = [{ :host_port => 8484, :guest_port => 8484 }]
 
@@ -42,6 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.provision "chef_zero" do |chef|
         chef.cookbooks_path = "cookbooks"
         chef.environments_path = "environments"
+        chef.nodes_path = "nodes"
         chef.roles_path = "roles"
         chef.add_role "#{vagrant_agent_conf[:role]}"
       end
