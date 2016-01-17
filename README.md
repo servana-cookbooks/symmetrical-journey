@@ -2,7 +2,7 @@
 Deploy [goapp](https://github.com/askoudros/goapp) with vagrant, github and chef_zero.
 
 ## Prerequisites
-Install [vagrant](https://www.vagrantup.com/downloads.html)
+Install [Vagrant](https://www.vagrantup.com/downloads.html)
 
 ### Tested On
  - Vagrant 1.7.4
