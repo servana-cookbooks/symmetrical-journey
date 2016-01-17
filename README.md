@@ -1,6 +1,13 @@
 # symmetrical-journey
 Deploy [goapp](https://github.com/askoudros/goapp) with vagrant, github and chef_zero.
 
+## Prerequisites
+Install [vagrant](https://www.vagrantup.com/downloads.html)
+
+### Tested On
+ - Vagrant 1.7.4
+ - Vagrant 1.8.1
+
 ## Begin
     clone this repo git@github.com:askoudros/symmetrical-journey.git
     execute ./vagrant_init

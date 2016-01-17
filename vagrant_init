@@ -1,7 +1,11 @@
+#!/usr/bin/env bash
+echo -e "Build beginning. This will take a few minutes.\n"
+
 vagrant up app01
 vagrant up app02
 vagrant up web01
 
+echo -e "Build complete. \n"
 
 for i in {1..4}
 do
