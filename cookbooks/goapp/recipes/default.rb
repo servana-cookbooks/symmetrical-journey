@@ -14,7 +14,7 @@ user "#{node['goapp']['user']}" do
   shell '/bin/sh'
 end
 
-# we could use variables in node scope but we don't have to
+
 template "/etc/init.d/goapp" do
   source "initscript.erb"
   mode '0755'
